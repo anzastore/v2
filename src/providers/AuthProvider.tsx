@@ -41,7 +41,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         const initAuth = async () => {
             setLoading(true);
             try {
-                await api.get('/sanctum/csrf-cookie');
+                // Token Auth Mode: skipped csrf-cookie
+                // await api.get('/sanctum/csrf-cookie');
                 const { data } = await api.get<User>('/api/me');
                 setUser(data);
                 setAuthenticated(true);
