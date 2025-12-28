@@ -56,7 +56,7 @@ export default function AuthModal({ isOpen, onClose, initialView = 'login' }: Au
                 <div className="p-8 md:p-10 relative z-10">
                     <div className="text-center mb-8">
                         <h2 className="text-3xl font-black text-white italic tracking-tighter mb-2">
-                            {view === 'login' ? 'WELCOME BACK (v2.1)' : 'JOIN THE TEAM'}
+                            {view === 'login' ? 'WELCOME BACK (v3.0)' : 'JOIN THE TEAM'}
                         </h2>
                         <p className="text-zinc-400 text-sm">
                             {view === 'login'

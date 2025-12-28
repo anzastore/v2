@@ -14,7 +14,7 @@ interface SignInFormProps {
 
 export default function SignInForm({ onSuccess, onRegisterClick, isModal = false }: SignInFormProps) {
     const { login } = useAuthContext();
-    console.log('VERSION 2.1 ACTIVE - DEBUGGING'); // VERIFICATION TAG
+    console.log('VERSION 3.0 ACTIVE - CSRF REMOVED'); // VERIFICATION TAG
     const [identifier, setIdentifier] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -130,7 +130,7 @@ export default function SignInForm({ onSuccess, onRegisterClick, isModal = false
                         </svg>
                         Signing in...
                     </span>
-                ) : 'SIGN IN (v2.0)'}
+                ) : 'SIGN IN (v3.0)'}
             </button>
 
             <div className="mt-6 text-center">
